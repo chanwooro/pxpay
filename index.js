@@ -85,6 +85,7 @@ module.exports = {
     request: function (details, callback) {
         var dpsData = this.generateRequest(details);
         var _url = details.dev ? 'https://uat.paymentexpress.com/pxaccess/pxpay.aspx' : 'https://sec.paymentexpress.com/pxaccess/pxpay.aspx'
+        console.log(_url)
         request({
             uri: _url,
             method: 'POST',
